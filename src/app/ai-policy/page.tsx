@@ -146,7 +146,7 @@ export default function AIPolicyPage() {
             </div>
 
             <p>
-              All assets included in our public releases are created or
+              All assets included in our released software and services are created or
               appropriately licensed by humans.
             </p>
           </Section>
@@ -266,16 +266,6 @@ export default function AIPolicyPage() {
               </div>
             </div>
           </section>
-
-          <div className="border-t border-white/10 pt-8">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <p className="text-sm text-gray-400 text-center">
-                By using our services, you agree to the terms outlined in this AI policy. If
-                you do not agree, please discontinue use of our services immediately.
-              </p>
-            </div>
-          </div>
-
         </div>
       </div>
     </main>
