@@ -40,6 +40,9 @@ export default function Footer() {
               <Link href="/conduct" className="hover:text-white transition-colors">
                 Code of Conduct
               </Link>
+              <Link href="/ai-policy" className="hover:text-white transition-colors">
+                AI Policy
+              </Link>
             </div>
           </div>
         </div>
