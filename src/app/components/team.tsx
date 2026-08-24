@@ -152,21 +152,6 @@ const teamMembers: TeamMember[] = [
       { message: 'whatever. Go my minigames', weight: 1 },
     ],
   },
-  {
-    name: 'Yumeko',
-    role: 'Concept Artist, UI/UX Designer',
-    avatar: '/Yumeko.png',
-    socialLinks: [],
-    messages: [
-      { message: 'You clicked.', weight: 1 },
-      { message: 'Try clicking again.', weight: 1 },
-      { message: 'Click another time.', weight: 1 },
-      { message: 'At 100 clicks something magical might happen!', weight: 1 },
-      { message: 'Click just one more time...', weight: 1 },
-      { message: 'Click again!', weight: 1 },
-      { message: 'One more click!', weight: 1 },
-    ],
-  },
 ];
 
 type BubbleMessage = {
@@ -231,7 +216,7 @@ export default function Team() {
     const selectedMessage = selectWeightedMessage(member.messages);
     setActiveBubble({ memberName: member.name, message: selectedMessage });
     setBubbleVisible(true);
-    
+
     timeoutRef.current = setTimeout(() => {
       setBubbleVisible(false);
 
@@ -239,7 +224,7 @@ export default function Team() {
         setActiveBubble(null);
       }, 300);
     }, 3000);
-  }
+  };
 
   return (
     <section
@@ -291,9 +276,7 @@ export default function Team() {
               {/* Avatar Container */}
               <div className="relative mb-3 sm:mb-4">
                 {/* Avatar */}
-                <div
-                  className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full bg-gray-700 overflow-hidden relative ring-3 ring-gray-800 hover:ring-blue-500 transition-all duration-400"
-                >
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-full bg-gray-700 overflow-hidden relative ring-3 ring-gray-800 hover:ring-blue-500 transition-all duration-400">
                   <Image
                     src={member.avatar}
                     alt={member.name}
